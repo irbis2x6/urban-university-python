@@ -22,13 +22,13 @@ def ancient_cipher(n):
     result = ""
     for a in range(1, n):
         for b in range(a + 1, n):
-            if (a + b) % n == 0:
+            if n % (a + b) == 0:
                 # result += str(a) + '+' + str(b) + '::'
                 result += str(a) + str(b)
     return result
 
 
-number_one1 = 17
+number_one1 = 18
 number_one2 = 11
 
 result1 = ancient_cipher(number_one1)
