@@ -36,9 +36,9 @@ for i in range(count_numbers):
             else:
                 is_prime = True
         if is_prime:
-            primes.insert(len(primes),numbers[i])
+            primes.append(numbers[i])
         else:
-            not_primes.insert(len(not_primes),numbers[i])
+            not_primes.append(numbers[i])
 print('Primes:',primes)
 print('Not Primes:',not_primes)
 
